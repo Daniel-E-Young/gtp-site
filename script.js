@@ -8,3 +8,7 @@ function validateForm(event) {
     const email = document.querySelector("#email").value;
     const message = document.querySelector("#message").value;
     let errorMessage = "";
+
+    if (!name) {
+        errorMessage += "Name is required. ";
+      }
